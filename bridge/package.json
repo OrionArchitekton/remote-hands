@@ -1,0 +1,29 @@
+{
+  "name": "remote-hands-bridge",
+  "displayName": "Remote Hands window bridge",
+  "description": "Lets the local Remote Hands service start a Claude session in this window's terminal. Fixed routes, 127.0.0.1 only, token required.",
+  "version": "0.1.0",
+  "publisher": "remote-hands",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "scripts": {
+    "test": "node --check src/extension.js && node --test test/*.test.js",
+    "package": "mkdir -p dist && vsce package --no-dependencies --skip-license --allow-missing-repository --out dist/remote-hands-bridge.vsix"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0"
+  }
+}
