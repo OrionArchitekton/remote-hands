@@ -1,5 +1,7 @@
 # Remote Hands
 
+Part of [Cosmocrat OS](https://www.cosmocrat.ai/tools#remote-hands). Experimental.
+
 Remote Hands lets an agent on a Windows PC start a real Claude Code session in a Cursor window
 without touching the keyboard. An agent (or a script) running in WSL calls the `hands` CLI; a
 small Windows service checks the request and asks a Cursor extension to open a terminal that runs
